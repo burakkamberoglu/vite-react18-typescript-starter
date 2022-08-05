@@ -24,5 +24,6 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({ immutableCheck: false, serializableCheck: false }),
 });
 
-const persistor = persistStore(store);
-export { persistor, store };
+persistStore(store);
+
+export default store;

@@ -79,16 +79,16 @@ const TodoForm: React.FC<Props> = ({ todo }) => {
                   dispatch(todoSlice.actions.deleteTodo(todo.id));
                   navigate('/');
                 }}
-                className='bg-red-700 w-12 text-xs hover:bg-red-600 transition font-medium p-1 rounded text-white tracking-tight '
+                className='bg-red-700 w-20 text-xs hover:bg-red-600 transition font-medium p-1 rounded text-white tracking-tight '
                 type='button'
               >
-                ❌ Sil
+                ❌ Delete
               </button>
               <button
                 className='bg-green-700 w-20 text-xs hover:bg-green-600 transition font-medium p-1 rounded text-white tracking-tight '
                 type='submit'
               >
-                ✅ Güncelle
+                ✅ Update
               </button>
             </div>
           )}
